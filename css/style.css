@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  background: url(../img/background9.jpg);
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 80px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.calculator .data,
+.calculator .result {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  text-align: end;
+  padding-right: 5px;
+  background-color: #f9f7f4;
+  border: 0.6px solid;
+}
+
+.calculator ::placeholder {
+  font-size: 20px;
+}
+
+.calculator .data {
+  font-size: 20px;
+}
+
+.calculator .result {
+  font-size: 25px;
+  color: darkblue;
+}
+
+.calculator .btnDo {
+  margin-bottom: 30px;
+}
+
+.calculator .btnDo .first,
+.calculator .btnDo .second,
+.calculator .btnDo .third,
+.calculator .btnDo .forth {
+  display: flex;
+}
+
+.calculator .btnDo .first button,
+.calculator .btnDo .second button,
+.calculator .btnDo .third button,
+.calculator .btnDo .forth button {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  background-color: antiquewhite;
+  border: 0.6px solid black;
+  cursor: pointer;
+}
+
+.calculator .btnDo .btnC {
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  background-color: antiquewhite;
+  border: 0.6px solid black;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 600px;
+}
+
+.history h3,
+.history p,
+.history li {
+  margin-bottom: 8px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+}
+
+@media (max-width: 675px) {
+  body {
+    max-width: 550px;
+  }
+  .history {
+    width: 500px;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    max-width: 400px;
+  }
+  header h1 {
+    height: 50px;
+    font-size: 25px;
+  }
+  .calculator .btnDo {
+    margin-bottom: 15px;
+  }
+  .calculator .data,
+  .calculator .result {
+    height: 45px;
+  }
+  .history {
+    width: 360px;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    max-width: 390px;
+  }
+}
+
+@media (max-width: 400px) {
+  .calculator .btnDo {
+    margin-bottom: 13px;
+  }
+  .history {
+    width: 300px;
+  }
+  .history h3,
+  .history p,
+  .history li {
+    margin-bottom: 5px;
+  }
+  footer {
+    height: 28px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

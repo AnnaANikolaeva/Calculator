@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/favicon.png">
+</head>
+
+<body>
+  <header>
+    <h1>Calculator</h1>
+  </header>
+  <main>
+    <div class="calculator">
+      <div class="field__input">
+        <input type="text" class="data" id="expression" placeholder="Input value">
+        <input type="text" class="result" id="result" placeholder="Result">
+      </div>
+      <div class="btnDo">
+        <div class="first">
+          <button onclick="inputExp('7')">7</button>
+          <button onclick="inputExp('8')">8</button>
+          <button onclick="inputExp('9')">9</button>
+          <button id="divide" onclick="inputExp('/')">/</button>
+        </div>
+        <div class="second">
+          <button onclick="inputExp('4')">4</button>
+          <button onclick="inputExp('5')">5</button>
+          <button onclick="inputExp('6')">6</button>
+          <button id="times" onclick="inputExp('*')">*</button>
+        </div>
+        <div class="third">
+          <button onclick="inputExp('1')">1</button>
+          <button onclick="inputExp('2')">2</button>
+          <button onclick="inputExp('3')">3</button>
+          <button id="minus" onclick="inputExp('-')">-</button>
+        </div>
+        <div class="forth">
+          <button onclick="inputExp('0')">0</button>
+          <button onclick="inputExp('.')">.</button>
+          <button id="result" onclick="result()">=</button>
+          <button id="plus" onclick="inputExp('+')">+</button>
+
+        </div>
+        <button class="btnC" onclick="clearAll('C')">C</button>
+      </div>
+
+    </div>
+
+    <div class="history">
+      <h3>History</h3>
+      <p>The calculator as a computing device has a history of more than 300 years. </p>
+      <p> Throughout history, such devices have been created as:</p>
+      <ol>
+        <li>Summing machines that find the sum of numbers between the values entered and stored in the device.</li>
+        <li>Tabulators that process information recorded on punched cards.</li>
+        <li>Arithmometers designed to accurately perform simple arithmetic operations: addition, subtraction, multiplication, division.</li>
+        <li>Electronic calculators powered by electricity.</li>
+      </ol>
+    </div>
+  </main>
+  <footer>
+    <h4>Frontend Developer Anna Nikolaeva</h4>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
